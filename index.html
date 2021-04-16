@@ -59,6 +59,12 @@
 
         sect.appendChild(linkPara);
 
+        /*Make a copy the paragraph with the link inside it and move it to the bottom of the section*/
+
+        let linkPara2 = linkPara.cloneNode(true);
+        sect.appendChild(linkPara2);
+        
+
     </script>
 </body>
 </html>
