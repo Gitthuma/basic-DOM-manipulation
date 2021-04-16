@@ -14,12 +14,16 @@
         <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
     </section>
 
-    <!--Add a <script></script> element just above the closing </body> tag.-->
+    <!--Add a script element just above the closing body tag.-->
 
     <script>
         /*To manipulate an element inside the DOM, you first need to select it and store a reference to it inside a variable.*/
 
         const link = document.querySelector('a');
+
+        /*Now we have the element reference stored in a variable, we can start to manipulate it using properties and methods available to it (these are defined on interfaces like HTMLAnchorElement in the case of <a> element, its more general parent interface HTMLElement, and Node — which represents all nodes in a DOM). First of all, let's change the text inside the link by updating the value of the Node.textContent property. */
+
+        link.textContent = 'Mozilla Developer Network';
 
     </script>
 </body>
