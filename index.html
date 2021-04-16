@@ -48,6 +48,11 @@
 
         const text = document.createTextNode(' — the premier source for web development knowledge.');
 
+        /*Grab a reference to the paragraph the link is inside, and append the text node to it*/
+
+        linkPara = document.querySelector('p');
+        linkPara.appendChild(text);
+
     </script>
 </body>
 </html>
